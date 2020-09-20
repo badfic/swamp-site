@@ -275,7 +275,7 @@ window.formatGoogleCalendar = function () {
             }
         }
 
-        return output + '</' + tagName + '>';
+        return output + '</' + tagName + '>' + '<hr/>';
     };
 
     var toHyperlink = function(str) {
