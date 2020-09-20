@@ -253,6 +253,9 @@ window.formatGoogleCalendar = function () {
             location = result.location || '',
             i;
 
+        description = toHyperlink(description);
+        location = toHyperlink(location);
+
         for (i = 0; i < format.length; i++) {
             format[i] = format[i].toString();
 
@@ -274,6 +277,16 @@ window.formatGoogleCalendar = function () {
 
         return output + '</' + tagName + '>';
     };
+
+    var toHyperlink = function(str) {
+        var pattern1 = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+        var str1 = str.replace(pattern1, "<a href='$1'>$1</a>");
+        
+        var pattern2 =/(^|[^\/])(www\.[\S]+(\b|$))/gim;
+        var str2 = str1.replace(pattern2, '$1<a target="_blank" href="http://$2">$2</a>');
+        
+        return str2;
+    }
 
     //Check if date is later then now
     var isPast = function isPast(date) {
