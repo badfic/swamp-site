@@ -257,13 +257,13 @@ window.formatGoogleCalendar = function () {
             format[i] = format[i].toString();
 
             if (format[i] === '*summary*') {
-                output = output.concat('<span class="summary">' + summary + '</span>');
+                output = output.concat('<span class="summary col-12">' + summary + '</span>');
             } else if (format[i] === '*date*') {
-                output = output.concat('<span class="date">' + dateFormatted + '</span>');
+                output = output.concat('<span class="date col-10">' + dateFormatted + '</span>');
             } else if (format[i] === '*description*') {
-                output = output.concat('<span class="description">' + description + '</span>');
+                output = output.concat('<span class="description col-12">' + description + '</span>');
             } else if (format[i] === '*location*') {
-                output = output.concat('<span class="location">' + location + '</span>');
+                output = output.concat('<span class="location col-6">' + location + '</span>');
             } else {
                 if (format[i + 1] === '*location*' && location !== '' || format[i + 1] === '*summary*' && summary !== '' || format[i + 1] === '*date*' && dateFormatted !== '' || format[i + 1] === '*description*' && description !== '') {
 

@@ -1221,6 +1221,40 @@ a {
 #lightgallery .item {
   margin-bottom: 30px;
 }
+
+.summary {
+    font-size: 2.2em;
+    color: #599111;
+    display: block;
+    margin-left: .4em;
+    margin-bottom: 0em;
+}
+
+.date {
+    font-size: 1em;
+    color: #fff;
+    display: block;
+    margin-left: .9em;
+    margin-bottom: 1.5em;
+}
+
+.description {
+    font-size: 1.5em;
+    color: #fff;
+    display: block;
+    margin-left: .5em;
+    margin-bottom: 0em;
+}
+
+.location {
+    font-size: 1em;
+    color: #fff;
+    display: block;
+    margin-left: .9em;
+    margin-bottom: 2.5em;
+
+}
+
   /* #lightgallery .item img {
     filter: gray;
     -webkit-filter: grayscale(1);
