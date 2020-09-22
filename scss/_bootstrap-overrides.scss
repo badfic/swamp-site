@@ -1,0 +1,170 @@
+body {
+    @include body-font;
+    line-height: 1.7;
+    color: $white;
+    font-weight: 400;
+    font-size: 1rem;
+    background: $black;
+}
+
+hr {
+    border-top: 1px dashed $shrekGreen;
+    border-radius: 5px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 3em;
+    color: $white;
+}
+
+a {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    color: $grey;
+    &:focus,
+    &:hover,
+    &:active {
+      color: $shrekGreen;
+      text-decoration: none;
+    }
+}
+
+.navbar-brand {
+    color: $white;
+    font-size: 2em;
+}
+
+.navbar-toggler {
+    color: $grey;
+    border-color: $grey;
+}
+
+.navbar-toggler-icon {
+    background-image: escape-svg($navbar-dark-toggler-icon-bg);
+}
+
+.nav-link {
+    text-transform: uppercase;
+}
+
+.nav .nav-item .active {
+    color: $shrekGreen;
+}
+
+.btn-outline-white {
+    border-color: $white;
+    color: $white;
+    border-width: 2px;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: .1em;
+    text-shadow: 1px 1px $black;
+}
+
+.btn-outline-white:hover {
+    background: $white;
+    color: $black;
+    text-shadow: none;
+}
+
+.image-wrap-2 {
+    display: block;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    margin-bottom: 30px;
+}
+
+.image-wrap-2:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0);
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+.image-wrap-2 img {
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    -webkit-transition: all .1s ease-in-out;
+}
+
+.image-wrap-2:hover img {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.01);
+}
+
+.image-wrap-2 .image-info {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.image-wrap-2 .image-info h3 {
+    font-size: 2em;
+    color: $white;
+    text-shadow: 1px 1px $black;
+}
+
+.image-wrap-2:hover:before {
+    background: rgba(0, 0, 0, 0.4);
+    content: "";
+}
+
+.summary {
+    font-size: 2.2em;
+    color: $shrekGreen;
+    display: block;
+    margin-left: .4em;
+    margin-bottom: 0em;
+}
+
+.date {
+    font-size: 1em;
+    color: $white;
+    display: block;
+    margin-left: .9em;
+    margin-bottom: 1.5em;
+}
+
+.description {
+    font-size: 1.5em;
+    color: $white;
+    display: block;
+    margin-left: .5em;
+    margin-bottom: 0em;
+}
+
+.location {
+    font-size: 1em;
+    color: $white;
+    display: block;
+    margin-left: .9em;
+    margin-bottom: 2.5em;
+}
+
+.botw {
+    margin-top: 2em;
+}
+
+.botw img {
+    box-shadow: 2px 2px 4px 0px $grey;
+}
+
+.demo-card .body {
+    color: $black;
+}
