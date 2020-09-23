@@ -3,6 +3,7 @@
 *.log
 *.map
 assets/
+dist/
 
 # Node modules
 node_modules/
