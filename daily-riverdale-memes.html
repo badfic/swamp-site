@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Daily Riverdale Memes — The Swamp</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./scss/main.scss">
+</head>
+
+<body>
+    <div class="navbar navbar-expand-lg py-2">
+        <a class="navbar-brand" href="index.html"><img class="img-fluid" src="images/swamp-logo-crop.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="the-swampys.html">The Swampys</a></li>
+                <li class="nav-item"><a class="nav-link" href="events.html">Upcoming Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="hunger-games-winners.html">Hunger Games Winners</a></li>
+                <li class="nav-item"><a class="nav-link"
+                        href="https://open.spotify.com/playlist/2u1vyvKkKl4vOYP48uTrhs?si=aXPfHX_zRu2pXx4ru9D_Cw">The
+                        Official Swamp Playlist</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://discord.gg/sDYkqYx">Join now!</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center">The Daily Riverdale Memes, provided by Megan</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm"></div>
+            <div class="col-sm">
+                <div id="app">
+                    <div class="alert alert-dark" v-for="message in messages" v-html="message">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm"></div>
+        </div>
+    </div>
+
+    <div class="footer py-4">
+        <div class="container-fluid text-center">
+            <p>Copyright &copy; 2020 Desdemona Wren All rights reserved</p>
+        </div>
+    </div>
+
+    <script src="js/daily-riverdale-memes.js"></script>
+</body>
+
+</html>
