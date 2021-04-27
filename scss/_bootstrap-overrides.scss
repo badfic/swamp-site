@@ -168,3 +168,41 @@ a {
 .demo-card .body {
     color: $black;
 }
+
+.swamp {
+    font-size: 1.3rem;
+    background: $shrekGreen;
+    padding: 1em;
+    margin-bottom: 1em;
+    font-weight: 900;
+    text-align: center;
+}
+
+.swampys {
+    font-size: 1.2rem;
+    padding: .1em;
+    margin-left: 22em;
+    margin-right: 22em;
+    margin-bottom: 0em;
+    text-align: left;
+}
+
+.swampysast {
+    font-size: 1rem;
+    padding: 1em;
+    margin-left: 25em;
+    margin-right: 20em;
+    margin-top: 2em;
+    margin-bottom: 4em;
+    text-align: left;
+}
+
+.swampysul {
+    font-size: 1.2rem;
+    padding: .1em;
+    font-weight: 900;
+    margin-left: 27em;
+    margin-right: 52em;
+    margin-bottom: 1em;
+    text-align: left;
+}
