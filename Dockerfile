@@ -1,4 +1,4 @@
-FROM node:12-stretch as build
+FROM quay.io/badfic/node:12 as build
 
 RUN mkdir -p /app
 
@@ -9,5 +9,5 @@ COPY . /app
 RUN npm install
 RUN npm run build
 
-FROM nginx:1-alpine
+FROM quay.io/badfic/nginx:1-alpine
 COPY --from=build /app/dist /usr/share/nginx/html
